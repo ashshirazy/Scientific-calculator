@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Calc | Scientific Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-container">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand">0</div>
+        </div>
+
+        <div class="keypad">
+            <button class="btn func" data-type="function" value="Math.sin">sin</button>
+            <button class="btn func" data-type="function" value="Math.cos">cos</button>
+            <button class="btn func" data-type="function" value="Math.tan">tan</button>
+            <button class="btn func" data-type="constant" value="Math.PI">π</button>
+
+            <button class="btn func" data-type="function" value="Math.log10">log</button>
+            <button class="btn func" data-type="function" value="Math.sqrt">√</button>
+            <button class="btn func" data-type="operator" value="**">xʸ</button>
+            <button class="btn func" data-type="constant" value="Math.E">e</button>
+
+            <button class="btn alert" data-all-clear>AC</button>
+            <button class="btn alert" data-delete>DEL</button>
+            <button class="btn action" data-type="operator" value="/">÷</button>
+            <button class="btn action" data-type="operator" value="*">×</button>
+
+            <button class="btn num" value="7">7</button>
+            <button class="btn num" value="8">8</button>
+            <button class="btn num" value="9">9</button>
+            <button class="btn action" data-type="operator" value="-">-</button>
+
+            <button class="btn num" value="4">4</button>
+            <button class="btn num" value="5">5</button>
+            <button class="btn num" value="6">6</button>
+            <button class="btn action" data-type="operator" value="+">+</button>
+
+            <button class="btn num" value="1">1</button>
+            <button class="btn num" value="2">2</button>
+            <button class="btn num" value="3">3</button>
+            <button class="btn primary span-two-v" data-equals>=</button>
+
+            <button class="btn num span-two-h" value="0">0</button>
+            <button class="btn num" value=".">.</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
